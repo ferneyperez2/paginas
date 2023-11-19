@@ -1,0 +1,85 @@
+body{
+    padding: 35px;
+    background-color: gray;
+  }
+  
+  header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+.elemento {
+    position: relative;
+  }
+  .elemento::before {
+    content: "Primer programador";
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.623);
+    border: 1px solid #ccc;
+    z-index: 1;
+    content: attr(data-content);
+    display: block;
+    white-space: pre-wrap;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+  }
+  .regresa{
+    background-color: #333;
+    display: inline;
+    border-radius: 20px;
+text-align: right;
+   }
+  .regresa :hover  {
+  
+background-color:#ff0000;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+border-radius: 20px;
+  }
+
+  .regresa > a {
+    background-color: gray;
+    border-radius: 20px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .siguente{
+    background-color: #333;
+    display: inline;
+    border-radius: 20px;
+text-align: right;
+  }
+
+  .siguente :hover  {
+  
+    background-color:#ff0000;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+        }
+
+        .siguente > a {
+            background-color: gray;
+            border-radius: 20px;
+            color: #000;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+          }
